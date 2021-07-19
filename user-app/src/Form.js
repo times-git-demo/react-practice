@@ -2,14 +2,15 @@ import { useState } from "react";
 
 const Form = () => {
     const [input, setInput] = useState({ firstname: "Jai" })
+    const handleInputChange = (e) => {
+        console.log(e.target);
+        setInput({ ...input, [e.target.name]: e.target.value })
+    }
     return (
         <div>
             <h4>Form</h4>
-            <input value={input.firstname} onChange={(e) => { setInput({ ...input, firstname: e.target.value }) }}></input>
-            <input value={input.age} onChange={(e) => {
-                console.log(e);
-                setInput({ ...input, age: e.target.value })
-            }}></input>
+            <input name="firstname" value={input.firstname} onChange={handleInputChange}></input>
+            <input name="age" value={input.age} onChange={handleInputChange}></input>
 
         </div>
     )
