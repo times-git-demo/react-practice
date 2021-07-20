@@ -17,8 +17,8 @@ const Form = () => {
     return (
         <div>
             <h4>Form</h4>
-            <input name="firstname" value={input.firstname} onChange={handleInputChange}></input>
-            <input name="age" value={input.age} onChange={handleInputChange}></input>
+            <input placeholder="First Name" name="firstname" value={input.firstname} onChange={handleInputChange}></input>
+            <input placeholder="Age" name="age" value={input.age} onChange={handleInputChange}></input>
             <input name="joiningDate" type="date" value={input.joiningDate} onChange={handleInputChange}></input>
             <button onClick={handleClick}>Save</button>
 
