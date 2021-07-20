@@ -4,22 +4,6 @@
       "name": "jai",
       "age": 123,
       "id": 1
-    },
-    {
-      "firstname": "Jai",
-      "age": "Arora",
-      "id": 2
-    },
-    {
-      "firstname": "Jai",
-      "age": "22",
-      "id": 3
-    },
-    {
-      "firstname": "jai",
-      "age": "23",
-      "joiningDate": "2021-07-07",
-      "id": 4
     }
   ]
 }
